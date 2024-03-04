@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Portfolio Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+</head>
+<body>
+  <header class="page-header">
+    <img width="200" height="200" src="img/logo.png" alt="Logo" class="page-header__item">
+    <nav class="main-navigation page-header__item">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
+          </li>
+          <li role="presentation">
+            <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+         </li>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem" class="navigation-list__item--active">Contact</a>
+          </li>
+        </ul>
+      </nav>
+ </header>
+     <main class="profile">
+        <img width="150" height="150" src="img/avatar.png" alt="My avatar" class="profile__portrait" >
+        <p>Contact me here:</p>
+        Tel: <a href="tel:+43123456789">+43 12 345 6789</a><br>
+        Skype: <a href="skype:my.skypeid"> my.skypeid</a><br>
+        Email: <a href="mailto:my@email.com">my@email.com</a><br>
+        <a href="mailto:my@email.com">Contact me</a>
+        <form action="#" method="post">
+          <label class="standard-label" for="contact-email">Email: </label>
+          <input type="email" id="contact-email" required><br>
+          <label class="standard-label" for="telephone">Telephone: </label>
+          <input type="tel" id="telephone" required><br>
+          <label class="standard-label" for="msg">Message:</label>    
+          <textarea id="msg" maxlength="240" required></textarea>      
+          <input type="submit" value="Send message">
+        </form>
+     </main>
+     <footer class="page-footer">
+      <p>Find me on</p>
+      <div class="social-media">
+        <a href="https://github.com/elodloic">
+          <img width="50" height="50" src="img/github.svg" alt="github">
+        </a>
+        <a href="https://twitter.com/elodloic">
+          <img width="50" height="50" src="img/twitter.svg" alt="twitter">
+        </a>
+        <a href="https://www.linkedin.com/in/el%C5%91d-szel%C3%A9nyi/">
+          <img width="50" height="50" src="img/linkedin.svg" alt="linkedin">
+        </a>
+      </div>
+   </footer>
+  <script src="js/tota11y.min.js"></script>
+</body>
+</html>
