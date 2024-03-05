@@ -62,6 +62,11 @@ a:active {
   color: var(--secondary-color);
 }
 
+table {
+  text-align: left;
+  border-spacing: 8px;
+}
+
 input[type=submit],
 .button {
   border: none;
