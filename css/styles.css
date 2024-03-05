@@ -136,6 +136,12 @@ list-style-type: none;
   margin-left: 15px;
 }
 
+.contact-form {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0;
+  }
+
 /* start grid fallback */
 .grid__item {
 display: inline-block;

@@ -36,15 +36,17 @@
         Tel: <a href="tel:+43123456789">+43 12 345 6789</a><br>
         Skype: <a href="skype:my.skypeid"> my.skypeid</a><br>
         Email: <a href="mailto:my@email.com">my@email.com</a><br>
-        <a href="mailto:my@email.com">Contact me</a>
-        <form action="#" method="post">
-          <label class="standard-label" for="contact-email">Email: </label>
-          <input type="email" id="contact-email" required><br>
-          <label class="standard-label" for="telephone">Telephone: </label>
-          <input type="tel" id="telephone" required><br>
-          <label class="standard-label" for="msg">Message:</label>    
-          <textarea id="msg" maxlength="240" required></textarea>      
-          <input type="submit" value="Send message">
+        <a href="mailto:my@email.com">Contact me</a><br>
+        <form method="post">
+          <ul class="contact-form">
+            <li><label class="standard-label" for="contact-email">Email: </label></li>
+            <li><input type="email" id="contact-email" required></li>
+            <li><label class="standard-label" for="telephone">Telephone: </label></li>
+            <li><input type="tel" id="telephone" required></li>
+            <li><label class="standard-label" for="msg">Message:</label></li>    
+            <li><textarea id="msg" maxlength="240" required></textarea></li>    
+            <li><input type="submit" value="Send message"></li>
+          </ul>
         </form>
      </main>
      <footer class="page-footer">
