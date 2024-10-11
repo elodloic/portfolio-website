@@ -285,3 +285,7 @@ width: 33%;
   -webkit-animation: 10s cloud-move infinite alternate linear;
           animation: 10s cloud-move infinite alternate linear;
 }
+
+.grid__item__image {
+  width: 99%;
+  }

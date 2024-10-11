@@ -226,3 +226,7 @@ width: 33%;
 .cloud-front {
   animation: 10s cloud-move infinite alternate linear;
 }
+
+.grid__item__image {
+width: 99%;
+}
