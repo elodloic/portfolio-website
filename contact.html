@@ -32,21 +32,22 @@
  </header>
      <main class="profile">
         <img width="150" height="150" src="img/avatar.png" alt="My avatar" class="profile__portrait" >
-        <p>Interested in a collaboration? Get in touch here:</p>
-        <form method="post">
+        <p>Interested in a collaboration?
+        <br>Feel free to get in touch here:</p>
+        <form method="post" action="https://hooks.zapier.com/hooks/catch/20767381/2rrqgcs/">
           <ul class="contact-form">
             <li><label class="standard-label" for="contact-email">Email: </label></li>
-            <li><input type="email" id="contact-email" required></li>
+            <li><input type="email" id="contact-email" name="email" required></li>
             <br>
             <li><label class="standard-label" for="telephone">Telephone: </label></li>
-            <li><input type="tel" id="telephone" required></li>
+            <li><input type="tel" id="telephone" name="telephone" required></li>
             <br>
             <li><label class="standard-label" for="msg">Message:</label></li>    
-            <li><textarea id="msg" maxlength="240" required></textarea></li>
+            <li><textarea id="msg" name="message" maxlength="240" required></textarea></li>
             <br>    
             <li><input type="submit" value="Send message"></li>
           </ul>
-        </form>
+        </form>        
      </main>
      <footer class="page-footer">
       <p>Find me on</p>
