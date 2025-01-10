@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Case Study: MovieBase React Client</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/style.production.css">
+    <style>
+        p {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+  <header class="page-header">
+    <img width="200" height="200" src="../img/logo.png" alt="Logo" class="page-header__item">
+    <nav class="main-navigation page-header__item">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a href="../index.html" role="menuitem" class="navigation-list__item">Home</a>
+          </li>
+          <li role="presentation">
+            <a href="../about.html" role="menuitem" class="navigation-list__item">About Me</a>
+          </li>
+          <li role="presentation">
+            <a href="../work.html" role="menuitem" class="navigation-list__item--active">Work</a>
+         </li>
+          <li role="presentation">
+            <a href="../contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+          </li>
+        </ul>
+      </nav>
+ </header>
+
+<main class="profile">
+  <div>
+    <h1>Case Study: MovieBase React Client</h1>
+    <p>Discover how <a target="_blank" href="https://projectmoviebase.netlify.app/">MovieBase</a>, a dynamic React application, enables movie enthusiasts to browse, discover and manage their favorite films with ease.</p>
+  </div>
+
+  <section>
+    <h2>Overview</h2>
+    <p>The app was built using the <a target="_blank" href="https://www.mongodb.com/resources/languages/mern-stack">MERN stack</a>, leveraging React for a seamless user interface and connecting to a pre-existing REST API for backend integration. It showcases modern web development practices and my learning process in full-stack development.</p>
+    <p>This case study will focus on the challenges faced and solutions implemented during the development of the React front-end client.</p>
+  </section>
+
+  <section>
+    <img src="movieview.jpg" alt="Movie view screenshot" class="grid__item__image" style="float: right; margin-left: 20px; width: 45%;">
+    <h2>Key Features</h2>
+    <ul>
+      <li><b>Main View:</b> Displays all movies with search and filtering options.</li>
+      <li><b>Single Movie View:</b> Provides detailed information about individual movies.</li>
+      <li><b>User Authentication:</b> Login and signup functionality with validation.</li>
+      <li><b>Profile View:</b> Allows users to update personal details and manage favorite movies.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Challenges & Solutions</h2>
+    <p>One of the main challenges was ensuring the app remained responsive across devices. This was addressed by leveraging Bootstrap's grid system and testing with various screen sizes.</p>
+    <p>Another challenge was implementing all features of the user profile page. This required simultaneous access to user profile information, the favorite movies list, and detailed movie data. The solution involved reusing and adapting existing React components, such as the <code>MovieCard</code> component, showcasing one of React's key benefits: reusability and flexibility.</p>
+</section>
+
+  <section>
+    <h2>Development Process</h2>
+    <p>The development process involved setting up the environment with Parcel, creating reusable React components and integrating Bootstrap to create a consistent design language. API calls were managed using React's <code>useEffect</code> and state management was implemented using React Context API.</p>
+  </section>
+  <img src="codesnippet.jpg" alt="Code snippet from the app" class="grid__item__image">
+
+
+  <section>
+    <h2>Results</h2>
+    <p>The app is fully functional, responsive and <a target="_blank" href="https://projectmoviebase.netlify.app/">hosted on Netlify</a>. Users can sign up, explore movies, manage profiles, and enjoy an intuitive interface. The project has received positive feedback for the app's clean design and responsiveness, fulfilling its goal of providing an enjoyable user experience.</p>
+    <img src="overview.jpg" alt="Screenshot of the app's main page" class="grid__item__image">
+  </section>
+
+  <section>
+    <h2>Future Enhancements</h2>
+    <ul>
+      <li>Adding new features such as director and genre views.</li>
+      <li>Enhancing accessibility with ARIA roles and keyboard navigation.</li>
+      <li>Incorporating animations for smoother transitions.</li>
+    </ul>
+  </section>
+
+  <footer class="page-footer">
+    <p>Want to know more? Feel free to <a href="../contact.html">contact me</a> or <a href="../work.html">explore more projects</a>.</p>
+  </footer>
+</main>
+</body>
+</html>
