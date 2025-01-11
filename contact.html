@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Contact me</title>
+    <title>Contact Me</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -9,10 +9,71 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <style>
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .contact-form input[type="submit"] {
+            background-color: #535C91;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .contact-form input[type="submit"]:hover {
+            background-color: #1B1A55;
+        }
+        .social-media {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+        }
+        .social-media img {
+            transition: transform 0.3s ease-in-out;
+        }
+        .social-media img:hover {
+            transform: scale(1.1);
+        }
+        .social-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .social-links a {
+            color: #535C91;
+            margin: 0 5px;
+            text-decoration: none;
+        }
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .contact-form input, .contact-form textarea {
+                font-size: 16px;
+            }
+            .contact-form label {
+                font-size: 14px;
+            }
+            .social-media img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    </style>
 </head>
 <body>
   <header class="page-header">
-    <img width="200" height="200" src="img/logo.png" alt="Logo" class="page-header__item">
+    <img width="200" height="200" src="img/logo.png" alt="Logo for Contact Page" class="page-header__item">
     <nav class="main-navigation page-header__item">
         <ul role="menubar" class="navigation-list">
           <li role="presentation">
@@ -30,38 +91,47 @@
         </ul>
       </nav>
  </header>
-     <main class="profile">
-        <img width="150" height="150" src="img/avatar.png" alt="My avatar" class="profile__portrait" >
-        <p>Interested in a collaboration? 🤝
-        <br>Feel free to get in touch here:</p>
-        <form method="post" action="https://hooks.zapier.com/hooks/catch/20767381/2rrqgcs/">
+     <main role="main" class="profile">
+        <img width="150" height="150" src="img/avatar.png" alt="My avatar" class="profile__portrait">
+        <h2>Get in Touch</h2>
+        <p>I’d love to hear from you! Fill out the form below, and I’ll get back to you soon.</p>
+        <form id="contact-form" method="post" action="https://formspree.io/f/mzzzyjvj">
+          <div id="success-message" aria-live="polite" style="display:none; color: green;">Message sent successfully!</div>
           <ul class="contact-form">
             <li><label class="standard-label" for="contact-email">Email: </label></li>
-            <li><input type="email" id="contact-email" name="email" required></li>
-            <br>
+            <li><input type="email" id="contact-email" name="email" placeholder="yourname@example.com" required></li>
+
             <li><label class="standard-label" for="telephone">Telephone: </label></li>
-            <li><input type="tel" id="telephone" name="telephone" required></li>
-            <br>
+            <li><input type="tel" id="telephone" name="telephone" placeholder="optional" pattern="^\\+?[0-9\\s\\-]{7,15}$"></li>
+
             <li><label class="standard-label" for="msg">Message:</label></li>    
-            <li><textarea id="msg" name="message" maxlength="240" required></textarea></li>
-            <br>    
+            <li><textarea id="msg" name="message" maxlength="240" placeholder="Enter your message here..." required></textarea></li>
+
             <li><input type="submit" value="Send message"></li>
           </ul>
-        </form>        
+        </form>
+        <div class="social-links">
+            <p>You can also reach me on:</p>
+        </div>
      </main>
-     <footer class="page-footer">
-      <p>Find me on</p>
+     <footer role="contentinfo" class="page-footer">
       <div class="social-media">
         <a href="https://github.com/elodloic">
-          <img width="50" height="50" src="img/github.svg" alt="github">
+          <img width="50" height="50" src="img/github.svg" alt="GitHub profile">
         </a>
         <a href="https://twitter.com/elodloic">
-          <img width="50" height="50" src="img/twitter.svg" alt="twitter">
+          <img width="50" height="50" src="img/twitter.svg" alt="Twitter profile">
         </a>
         <a href="https://www.linkedin.com/in/el%C5%91d-szel%C3%A9nyi/">
-          <img width="50" height="50" src="img/linkedin.svg" alt="linkedin">
+          <img width="50" height="50" src="img/linkedin.svg" alt="LinkedIn profile">
         </a>
       </div>
    </footer>
+   <script>
+       document.querySelector('#contact-form').addEventListener('submit', function (event) {
+           event.preventDefault();
+           document.querySelector('#success-message').style.display = 'block';
+       });
+   </script>
 </body>
 </html>

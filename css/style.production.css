@@ -170,6 +170,7 @@ list-style-type: none;
   display: inline-block;
   list-style-type: none;
   padding: 0;
+  width: 280px;
   }
 
 /* start grid fallback */
@@ -289,3 +290,7 @@ width: 33%;
 .grid__item__image {
   width: 99%;
   }
+
+  .justify p {
+    text-align: justify;
+}
